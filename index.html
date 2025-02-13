@@ -16,7 +16,7 @@
 
         * {
             margin: 0;
-            padding: 0;
+            padding: 0; 
             box-sizing: border-box;
         }
 
@@ -179,6 +179,78 @@
             height: 2px;
             background-color: brown;
         }
+
+        footer {
+    width: 100%;
+    background-color: rgba(255, 254, 254, 0.75);
+    padding: 4rem 0;
+    margin-top: 5rem;
+    box-shadow: 0px -4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.footer-section {
+    flex: 1;
+    margin: 0 2rem;
+}
+
+.footer-section h3 {
+    font-family: "Big Shoulders Text", serif;
+    font-size: 2.8rem;
+    color: brown;
+    margin-bottom: 2rem;
+}
+
+.footer-section p, .footer-section a {
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+    color: #333;
+    text-decoration: none;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 1rem;
+}
+
+.footer-section .social-icons {
+    display: flex;
+    gap: 2rem;
+    margin-top: 1rem;
+}
+
+.footer-section .social-icons a {
+    color: brown;
+    font-size: 2.4rem;
+    transition: color 0.3s ease;
+}
+
+.footer-section .social-icons a:hover {
+    color: darkred;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 3rem;
+    padding-top: 2rem;
+    border-top: 1px solid rgba(165, 42, 42, 0.3);
+}
+
+.footer-bottom p {
+    font-size: 1.4rem;
+    color: #666;
+}
     </style>
 </head>
 
@@ -245,6 +317,35 @@
         </div>
         <hr class="divider">
     </div>
+    <!--footer-->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>About Us</h3>
+                <p>Discover the finest selection of wines from Ribera del Duero. Our passion for excellence drives us to bring you the most exceptional wines from this renowned region.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Contact</h3>
+                <ul>
+                    <li><p><i class="fas fa-map-marker-alt"></i> Ribera del Duero, Spain</p></li>
+                    <li><p><i class="fas fa-phone"></i> +34 123 456 789</p></li>
+                    <li><p><i class="fas fa-envelope"></i> info@riberavino.com</p></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Ribera Vino - Vadim Zbanok. All rights reserved.</p>
+        </div>
+    </footer>
 </body>
 
 </html>
