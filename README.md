@@ -6,6 +6,6 @@ This project is dedicated to improving my skills in HTML and CSS. Through this p
 - Experimenting with new responsive design techniques.
  -Implementing best coding practices.
 - Increasing my understanding of web accessibility.
-- 
-- **Main objective**:
+  
+**Main objective**:
 - Lay the foundation for mastering JavaScript and React as well as other leading tools in web development.
