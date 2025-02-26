@@ -6,13 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Wine Guide</title>
     <link rel="icon" href="./resources/fernandez-de-pierola.jpg" type="image/png">
-    <!--Script für Icons-->
+    <!-- Script for Icons -->
     <script src="https://kit.fontawesome.com/8c56732401.js" crossorigin="anonymous"></script>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Text:wght@100..900&family=Lexend:wght@100..900&display=swap');
         @import url('https://fonts.googleapis.com/css2?family=IM+Fell+Great+Primer+SC&family=Playwrite+VN:wght@100&display=swap');
         @import url('https://fonts.googleapis.com/css2?family=Redressed&display=swap');
-
 
         * {
             margin: 0;
@@ -27,6 +26,11 @@
         body {
             font-family: Arial, sans-serif;
             height: 100vh;
+            background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./resources/patrick-federi-n5SO9qLGNZc-unsplash.jpg');
+            background-position: left;
+            background-size: cover;
+            background-attachment: fixed;
+            line-height: 1.2;
         }
 
         header {
@@ -41,9 +45,8 @@
         }
 
         nav {
-            background-color: red;
-            width: 100%;
             background-color: rgba(255, 254, 254, 0.75);
+            width: 100%;
             padding: 5rem 0;
             display: flex;
             justify-content: center;
@@ -70,18 +73,6 @@
 
         nav ul li a:hover {
             color: darkred;
-        }
-
-        body {
-            background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-                url('./resources/patrick-federi-n5SO9qLGNZc-unsplash.jpg');
-            background-position: center;
-            background-size: cover;
-            background-position: left;
-            background-attachment: fixed;
-            top: 0;
-            left: 0;
-            line-height: 1.2;
         }
 
         .logo-container .logo p {
@@ -132,16 +123,14 @@
             justify-content: center;
             background-color: white;
             width: 30rem;
-            box-shadow:
-                15px 15px 25px rgba(44, 17, 17, 0.7);
+            box-shadow: 15px 15px 25px rgba(44, 17, 17, 0.7);
             border-radius: 100px;
-
+            cursor: pointer;
         }
 
         .inner-box:hover {
             box-shadow: 0 0px 10px rgba(0, 0, 0, 0.3);
             transform: translateY(-10px);
-
         }
 
         img {
@@ -153,7 +142,15 @@
             display: flex;
             flex-direction: column;
             justify-content: space-evenly;
-            /* Distribute the items evenly */
+            opacity: 0;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.5s ease-out, opacity 0.5s ease-out;
+        }
+
+        .inner-box:hover + .wine-info {
+            opacity: 1;
+            max-height: 500px; /* Ajusta el valor según el contenido */
         }
 
         .wine-info h2 {
@@ -168,8 +165,6 @@
             column-gap: 8rem;
             line-height: 3rem;
             column-rule: .1rem solid brown;
-            /* Adds a 2px solid black line between columns */
-
         }
 
         .divider {
@@ -275,41 +270,36 @@
     </nav>
     <!-- End of added section -->
 
-
     <div class="content">
         <div class="container-box">
             <div class="content-wrapper">
-                <button class="inner-box">
-                    <img src="./resources/fernandez-de-pierola.jpg" alt="pierola">
-                </button>
+                <div class="inner-box">
+                    <img src="../resources/fernandez-de-pierola.jpg" alt="pierola">
+                </div>
                 <div class="wine-info">
-                    <h2>"Pierola: A Symphony of Rich Flavors"
-                    </h2>
+                    <h2>"Pierola: A Symphony of Rich Flavors"</h2>
                     <p>Pierola is a wine that captivates with its rich, deep flavors of ripe red fruits and subtle oak
                         hints. Smooth and well-balanced, it offers a delightful experience with every sip, leaving a
                         lasting impression of elegance and complexity.</p>
                 </div>
             </div>
             <div class="content-wrapper">
+                <div class="inner-box">
+                    <img src="../resources/fernandez-de-pierola.jpg" alt="pierola">
+                </div>
                 <div class="wine-info">
-                    <h2>"Pierola: A Symphony of Rich Flavors"
-                    </h2>
+                    <h2>"Pierola: A Symphony of Rich Flavors"</h2>
                     <p>Pierola is a wine that captivates with its rich, deep flavors of ripe red fruits and subtle oak
                         hints. Smooth and well-balanced, it offers a delightful experience with every sip, leaving a
                         lasting impression of elegance and complexity.</p>
                 </div>
-                <div class="inner-box">
-                    <img src="./resources/fernandez-de-pierola.jpg" alt="pierola">
-                </div>
-
             </div>
             <div class="content-wrapper">
                 <div class="inner-box">
-                    <img src="./resources/fernandez-de-pierola.jpg" alt="pierola">
+                    <img src="../resources/fernandez-de-pierola.jpg" alt="pierola">
                 </div>
                 <div class="wine-info">
-                    <h2>"Pierola: A Symphony of Rich Flavors"
-                    </h2>
+                    <h2>"Pierola: A Symphony of Rich Flavors"</h2>
                     <p>Pierola is a wine that captivates with its rich, deep flavors of ripe red fruits and subtle oak
                         hints. Smooth and well-balanced, it offers a delightful experience with every sip, leaving a
                         lasting impression of elegance and complexity.</p>
@@ -317,9 +307,8 @@
             </div>
         </div>
         <hr class="divider">
-
-        
     </div>
+
     <!--footer-->
     <footer>
         <div class="footer-content">
@@ -356,6 +345,7 @@
             <p>&copy; 2025 Ribera Vino - Vadim Zbanok. All rights reserved.</p>
         </div>
     </footer>
+
 </body>
 
 </html>
